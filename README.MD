@@ -12,11 +12,7 @@ git clone https://github.com/Thoq-jar/Aqua.git
 Then simply modify the `Aqua.toml` file to change settings or get started with the `Aqua` language by
 playing with src/main.ts or deleting it and making a new one!
 
-
-
-
-
-
+> We recommend [Bun](https://bun.sh) for the best performance
 
 ## FizzBuzz Example
 ```typescript
