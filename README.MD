@@ -12,7 +12,13 @@ git clone https://github.com/Thoq-jar/Aqua.git
 Then simply modify the `Aqua.toml` file to change settings or get started with the `Aqua` language by
 playing with src/main.ts or deleting it and making a new one!
 
-# FizzBuzz Example
+
+
+
+
+
+
+## FizzBuzz Example
 ```typescript
 // Import the Aqua standard library //
 import * as std from "../Aqua/syntax/std";
