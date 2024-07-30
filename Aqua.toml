@@ -1,0 +1,15 @@
+[Aqua_Config]
+Version = 0.1
+Language = "TypeScript"
+
+[Interpreter_Config]
+Name = "bun"
+Path = "src/"
+Main = "main"
+
+[Aqua_Project]
+Name = "FizzBuzz"
+Description = "This is a demo project for the Aqua Typescript framework"
+Version = 0.1
+Liscense = "https://raw.githubusercontent.com/Thoq-jar/Thoq-License/main/License"
+Repo = "https://github.com/Thoq-jar/Aqua"
