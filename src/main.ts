@@ -1,5 +1,5 @@
 // Import the Aqua standard library //
-import * as std from "../Aqua/syntax/std";
+import * as std from "../Aqua/aqua/std";
 
 // Variables //
 let iterations: number = 10;

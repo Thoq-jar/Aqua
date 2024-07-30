@@ -4,10 +4,10 @@ import * as toml from "toml";
 import { exec } from "child_process";
 
 // @ts-ignore //
-import * as std from "./syntax/std";
+import * as std from "./aqua/std";
 const prefix = "[Aqua] ";
 
-function parseAndRunCommand(filePath: string): void {
+const parseAndRunCommand = std.fn((filePath: string): void => {
   const data = fs.readFileSync(filePath, "utf8");
   const configObject = toml.parse(data);
 
@@ -52,7 +52,7 @@ function parseAndRunCommand(filePath: string): void {
       prefix + "Interpreter_Config section or required properties missing.",
     );
   }
-}
+});
 
 const configFile = "Aqua.toml";
 parseAndRunCommand(configFile);
