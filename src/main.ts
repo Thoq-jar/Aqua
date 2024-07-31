@@ -79,9 +79,10 @@ printStyles();
 const trimTest = std.fn((): void => {
     std.nline();
     const testString: string = "   Test   ";
-    std.print(std.string(testString.length));
-    std.print(std.string(std.trimStart(testString).length));
-    std.print(std.string(std.trimEnd(testString).length));
+    std.print(std.string(testString)); // Doesnt trim //
+    std.print(std.string(std.trimStart(testString))); // Trims the start or 'left' //
+    std.print(std.string(std.trimEnd(testString))); // Trims the end or 'right' //
+    std.print(std.string(std.trimAll(testString))); // Trims both start and end of left and right whitespaces //
 });
 
 trimTest();

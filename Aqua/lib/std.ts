@@ -30,5 +30,6 @@ export const trimStart = fn((value: string): string => { // @ts-ignore //
   return value.trimStart() });
 export const trimEnd = fn((value: string): string => { // @ts-ignore //
   return value.trimEnd() });
-
+export const trimAll = fn((value: string): string => { // @ts-ignore //
+    return value.trim(value.trim())});
 imprt('std.ts');
