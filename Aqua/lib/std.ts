@@ -18,21 +18,17 @@ export const styles = {
   normal: "\x1b[22m",
 };
 
-// @ts-ignore
-export const imprt = fn((modulePath: string) => { return import(modulePath) });
 export const fn = (func: Function) => func;
+export const imprt = fn((modulePath: string) => {
+  // @ts-ignore | It's bad but it works so I'm keeping it //
+  return import(modulePath) });
 export const nline = fn((): void => console.log(""));
 export const print = fn((msg: string): void => console.log(`${msg}`));
 export const printc = fn((style: string, color: string, msg: string): void => console.log(`${style}${color}${msg}${colors.reset}`));
 export const string = fn((value: number): string => { return value.toString() });
+export const trimStart = fn((value: string): string => { // @ts-ignore //
+  return value.trimStart() });
+export const trimEnd = fn((value: string): string => { // @ts-ignore //
+  return value.trimEnd() });
 
-// Test the functions //
-const test = fn(()=> {
-  print("Hello, World!");
-  printc(styles.normal, colors.normal, "Hello, World!");
-  nline();
-  imprt("");
-  print(string(123));
-});
-
-test();
+imprt('std.ts');

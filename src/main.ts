@@ -3,7 +3,7 @@ import * as std from "../Aqua/lib/std";
 
 
 // Import function //
-std.imprt(/* Path to module */);
+std.imprt('std.ts');
 
 
 // Variables //
@@ -73,3 +73,15 @@ const printStyles = std.fn((): void => {
 });
 
 printStyles();
+
+
+// Trim test //
+const trimTest = std.fn((): void => {
+    std.nline();
+    const testString: string = "   Test   ";
+    std.print(std.string(testString.length));
+    std.print(std.string(std.trimStart(testString).length));
+    std.print(std.string(std.trimEnd(testString).length));
+});
+
+trimTest();

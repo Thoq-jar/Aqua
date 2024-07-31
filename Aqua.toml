@@ -8,7 +8,7 @@ Path = "src/"
 Main = "main"
 
 [Aqua_Project]
-Name = "FizzBuzz"
+Name = "Demo"
 Description = "This is a demo project for the Aqua Typescript framework"
 Version = 0.1
 Liscense = "https://raw.githubusercontent.com/Thoq-jar/Thoq-License/main/License"
